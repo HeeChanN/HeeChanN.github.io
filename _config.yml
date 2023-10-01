@@ -23,7 +23,7 @@ title: 전공생 노트 # the main title
 tagline: CS Study Note # it will display as the sub-title
 
 description: >- # used by seo meta and the atom feed
-  A minimal, responsive and feature-rich Jekyll theme for technical writing.
+  대학교 3학년부터 공부하기 시작한 내용들을 정리하는 블로그, 백엔드 개발자를 위한 CS와 JAVA 그리고 일기 
 
 # fill in the protocol & hostname for your site, e.g., 'https://username.github.io'
 url: "https://heechann.github.io"
