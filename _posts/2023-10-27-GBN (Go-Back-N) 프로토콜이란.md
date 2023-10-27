@@ -1,5 +1,5 @@
 ---
-title: "GBN (Go-Back-N) 프로토콜이란?"
+title: "GBN (Go-Back-N) 프로토콜이란"
 date: 2023-10-27 23:10:00 +09:00
 categories: [CS, 네트워크]
 tags:
