@@ -1,13 +1,13 @@
 ---
 title: "Spring STOMP 프로토콜"
 date: 2024-01-28 00:00:02 +09:00
-categories: [스프링 부트, STOMP]
+categories: [스프링부트, STOMP]
 tags:
   [
     프로토콜,
     네트워크,
     STOMP,
-    스프링 부트,
+    스프링부트,
     STOMP 테스트 코드,
     WebSocket
   ]
