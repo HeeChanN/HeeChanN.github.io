@@ -1,6 +1,6 @@
 ---
 title: "Spring STOMP 프로토콜"
-date: 2024-01-26 00:00:02 +09:00
+date: 2024-01-28 00:00:02 +09:00
 categories: [스프링 부트, STOMP]
 tags:
   [
