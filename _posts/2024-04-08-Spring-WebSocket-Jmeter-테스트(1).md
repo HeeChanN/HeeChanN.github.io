@@ -191,7 +191,8 @@ Origin: http://localhost:3000
 
 <br>
 
-4. 마지막으로 자신이 보낸 메시지도 자신이 받아야 하므로 WebSocket Single Read Sampler를 생성합니다. 해당 Sampler로 SimpleBrocker가 구독자들에게 BroadCasting할 때 메시지를 받아올 수 있습니다.![Sampler5](https://github.com/HeeChanN/HeeChanN/assets/88177732/69878feb-c73f-497e-83d3-598ae9592b73)
+4. 마지막으로 자신이 보낸 메시지도 자신이 받아야 하므로 WebSocket Single Read Sampler를 생성합니다. 해당 Sampler로 SimpleBrocker가 구독자들에게 BroadCasting할 때 메시지를 받아올 수 있습니다.![Sampler4](https://github.com/HeeChanN/HeeChanN/assets/88177732/2c980115-ce9d-40ad-a2e9-da1e1d853265)
+
 
 <br>
 
