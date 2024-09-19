@@ -28,7 +28,8 @@ tags:
 
 보통 우리는 아래와 같이 Entity 연관관계 매핑에 fetch = FetchType.Lazy를 사용한다.
 
-```Java
+
+```java
 @Entity
 @Getter
 @NoArgsConstructor
@@ -96,7 +97,7 @@ Member - Team이 다대일 관계로 매핑되어있을 때, 특정 로직에서
 
 위 Entity 코드에서 Member - Team의 경우 ManyToOne의 다대일 관계이다. 다대일 매핑의 경우 조회시 fetch join을 사용하면 된다.
 
-```Java
+```java
 1. JPQL
 @Query("SELECT m FROM Member m JOIN FETCH m.team")
 List<Member> findMemberWithTeam()
@@ -127,7 +128,7 @@ fetch join을 사용하게 되면 실제 쿼리는 join을 이용하여 한번�
 Board - Member (다대일)<br>
 Board - BoardType (다대일)
 
-```Java
+```java
 @Entity
 @NoArgsConstructor
 @Getter
@@ -162,7 +163,7 @@ public class Board {
 
 
 테스트 코드는 아래와 같이 작성하여 테스트를 진행하였습니다.
-```Java
+```java
 @Test
 void testNPlusProblemSolveCase2(){
       em.flush();
@@ -201,7 +202,7 @@ void testNPlusProblemSolveCase2(){
 일대다의 경우 쿼리는 동일하다.
 
 
-```Java
+```java
 1. JPQL
 @Query("SELECT t FROM Team t JOIN FETCH t.members where t.name = '팀A' ")
 List<Team> findTeamWithMembers()
@@ -259,7 +260,7 @@ MutipleBagFetchException 문제로 @OneToMany 관계를 단일 쿼리에서 동�
 
 실제로 데이터를 가져올 때 어떻게 가져오는지 궁금하여 DTO로 테스트를 진행해보았다.
 
-```Java
+```java
 @BeforeEach
     public void before() {
         Team teamA = new Team("teamA");
