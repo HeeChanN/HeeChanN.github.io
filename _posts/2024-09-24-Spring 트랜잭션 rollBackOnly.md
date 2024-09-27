@@ -6,7 +6,7 @@ tags:
   [
     스프링,
     JPA,
-    @Transactional,
+    Transactional,
     트랜잭션,
     rollBackOnly
   ]
