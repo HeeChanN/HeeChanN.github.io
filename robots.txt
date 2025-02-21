@@ -2,4 +2,4 @@ User-agent: *
 
 Allow: /
 
-Sitemap: https://www.techmate.site/sitemap.xml
+Sitemap: https://heechann.github.io/sitemap.xml
