@@ -1,7 +1,7 @@
 ---
 title: "파일 업로드 (Stream, MultipartFile, Pre-signed url, Multipart Upload)"
 date: 2025-2-20 17:28:00 +09:00
-categories: [SpringBoot, Upload]
+categories: [스프링부트, Upload]
 tags:
   [
     SpringBoot,
