@@ -1,7 +1,7 @@
 ---
 title: "Spring WebSocket-Jmeter-테스트(1)"
 date: 2024-04-08 21:00:00 +09:00
-categories: [부하 테스트, Jmeter]
+categories: [부하테스트, Jmeter]
 tags:
   [
     WebSocket,
