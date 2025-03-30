@@ -1,10 +1,10 @@
 ---
 title: "Spring 트랜잭션 rollBackOnly"
 date: 2024-09-24 22:00:00 +09:00
-categories: [스프링,JPA]
+categories: [스프링부트,JPA]
 tags:
   [
-    스프링,
+    스프링부트,
     JPA,
     Transactional,
     트랜잭션,
