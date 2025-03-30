@@ -44,7 +44,7 @@ public class EntityControllerTest {
 
 <br>
 
-### `@WebMvcTest(EntityController.class)`
+### @WebMvcTest(EntityController.class)
 이 어노테이션은 특정 Controller에 대한 단위 테스트 환경을 구축할 수 있도록 도와줍니다. 테스트 시, 전체 애플리케이션 컨텍스트를 로드하는 것이 아니라 Web Layer만 최소한으로 구성하여 빠르게 테스트할 수 있습니다.
 
 @WebMvcTest를 사용하면 다음과 같은 컴포넌트들이 스프링 컨텍스트에 포함됩니다:
@@ -53,7 +53,7 @@ public class EntityControllerTest {
 
 <br>
 
-### `@AutoConfigureMockMvc 와 mockMvc`
+### @AutoConfigureMockMvc 와 mockMvc
 Spring Boot는 기본적으로 내장 Tomcat과 같은 서블릿 기반의 요청 처리 방식을 따릅니다. Controller 테스트를 위해 실제 네트워크 요청을 발생시키는 대신, MockMvc를 사용하여 HTTP 요청과 응답을 모의(Mock)할 수 있습니다.
 
 MockMvc는 실제 서블릿 컨테이너 없이도 필터 체인, DispatcherServlet, 그리고 Controller를 호출할 수 있게 해주며, 테스트 환경에서 가상의 MockHttpServletRequest와 MockHttpServletResponse를 생성하여 전체 요청 흐름을 검증할 수 있습니다.
