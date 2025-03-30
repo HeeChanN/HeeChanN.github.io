@@ -55,7 +55,7 @@ void 지도정보생성시_N개의_DurationMap_생성_테스트() {
 
 처음에는 application.yml 파일에 다음 설정을 추가하여 Hibernate 배치 기능을 활성화하려고 시도했습니다.
 
-```json
+```markdown
 spring:
   jpa:
     properties:
