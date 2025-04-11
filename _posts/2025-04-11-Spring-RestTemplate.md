@@ -1,6 +1,6 @@
 ---
 title: "Spring Boot에서 외부 API 호출 (1) : RestTemplate"
-date: 2025-04-12 3:00:00 +09:00
+date: 2025-04-11 3:00:00 +09:00
 categories: [스프링부트,외부 API]
 tags:
   [
@@ -76,13 +76,13 @@ public RestTemplate smsRestTemplate() {
 
 위와 같이 설정하고 restTemplate으로 쓰레드 여러개로 동시에 10개의 요청을 보냈을 때 아래와 같이 10개의 TCP 커넥션이 맺어지는 것을 확인해볼 수 있었습니다.
 
-![Image](https://github.com/user-attachments/assets/a480acbb-a1a6-4c85-bd3c-456512be9402)
+![image](/assets/img/post/rest_template/1.png)
 
 이를 통해 톰캣의 max 쓰레드 풀 크기가 200일 때 커넥션이 200개까지도 생성될 수 있다고 예상해볼 수 있었습니다.
 
 이후, 10개의 쓰레드를 동시에 모두 실행시키는 것이 아니라 Tread.sleep(1000)을 통해 1초 간격으로 실행했을 때는 TCP 커넥션을 재사용하는 것을 확인해 볼 수 있었습니다.
 
-![Image](https://github.com/user-attachments/assets/5ba2af68-ed8a-4f6b-8e54-924408244bf0)
+![image](/assets/img/post/rest_template/2.png)
 
 이는, Http 1.1의 Keep Alive로 인해 TCP 커넥션이 재사용되고 있었고 실제 sleep 간격을 늘려가며 확인해 보았을 때 총 5~6초정도 커넥션을 종료하지 않고 유지하는 것을 확인할 수 있었습니다.
 
