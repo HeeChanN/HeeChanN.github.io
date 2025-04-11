@@ -1,7 +1,7 @@
 ---
 title: "Spring Boot에서 외부 API 호출 (1) : RestTemplate"
 date: 2025-04-12 3:00:00 +09:00
-categories: [스프링부트,외부 API 호출]
+categories: [스프링부트,외부 API]
 tags:
   [
     스프링부트,
